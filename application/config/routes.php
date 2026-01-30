@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'users/index';
 $route['users'] = 'users/index';
-$route['users/create'] = 'users/create';
+$route['create-user'] = 'users/create';
 $route['users/edit/(:num)'] = 'users/edit/$1';
 $route['users/delete/(:num)'] = 'users/delete/$1';
 $route['404_override'] = '';

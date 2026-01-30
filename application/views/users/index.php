@@ -1,5 +1,5 @@
 <h2>User List</h2>
-<a href="<?= base_url('users/create') ?>">Add User</a>
+<a href="<?= base_url('create-user') ?>">Add User</a>
 <table border="1" cellpadding="10">
 <tr>
     <th>ID</th>
