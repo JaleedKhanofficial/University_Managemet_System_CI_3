@@ -7,14 +7,15 @@
     <th>Email</th>
     <th>Action</th>
 </tr>
+<?php $n = 1; ?>
 <?php foreach($users as $u): ?>
 <tr>
-    <td><?= $u->id ?></td>
+    <td><?= $n++ ?></td>
     <td><?= $u->name ?></td>
     <td><?= $u->email ?></td>
     <td>
         <a href="<?= base_url('users/edit/'.$u->id) ?>">Edit</a> |
-        <a href="<?= base_url('users/delete/'.$u->id) ?>" onclick="return confirm('Delete?')">Delete</a>
+        <a href="<?= base_url('users/delete/'.$u->id) ?>" onclick="return confirm('Are you sure to delete the record?')">Delete</a>
     </td>
 </tr>
 <?php endforeach; ?>
